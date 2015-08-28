@@ -540,12 +540,21 @@
             }
         };
 
+        self._captureEvent = function(e) {
+            e = e || window.event;
+
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            }
+        };
+
         self.el = document.createElement('div');
         self.el.className = 'pika-single' + (opts.isRTL ? ' is-rtl' : '') + (opts.theme ? ' ' + opts.theme : '');
 
         addEvent(self.el, 'mousedown', self._onMouseDown, true);
         addEvent(self.el, 'touchend', self._onMouseDown, true);
         addEvent(self.el, 'change', self._onChange);
+        addEvent(self.el, 'click', self._captureEvent);
 
         if (opts.field) {
             if (opts.container) {
