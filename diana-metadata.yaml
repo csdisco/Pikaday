@@ -1,0 +1,12 @@
+diana_metadata:
+  version: "1.0"
+  code_repo_meta:
+    issue_tracker: jira
+    issue_tracker_handle: REF
+    drn: browser://ap-customer-environment.js-thread
+    is_production_deployed: true
+    is_production_accessed: true
+    is_spike: false
+    compliance_scopes: []
+    subject_experts:
+      - vigneault@csdisco.com
