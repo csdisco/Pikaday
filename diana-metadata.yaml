@@ -10,3 +10,5 @@ diana_metadata:
     compliance_scopes: []
     subject_experts:
       - vigneault@csdisco.com
+    alternate_owners:
+      - "@csdisco/reflect-ui"
